@@ -1,3 +1,90 @@
-.hello {
-  color: red;
+$wred: rgb(204, 60, 41);
+
+html {
+  * {
+    box-sizing: border-box;
+  }
+}
+
+.container {
+  display: grid;
+  height: 100vh;
+  max-width: 100vw;
+}
+
+.blurb {
+  color: $wred;
+  font-family: "Merriweather", serif;
+  line-height: 1.5em;
+  letter-spacing: 0.01em;
+  word-spacing: 0.2em;
+  text-align: center;
+  padding: 1rem 0.5rem;
+}
+
+.title {
+  font-family: "Merriweather", serif;
+  text-transform: lowercase;
+  color: black;
+  font-size: 13rem;
+  text-align: center;
+  letter-spacing: 0.06em;
+  margin-top: -1rem;
+  margin-bottom: -2rem;
+}
+
+.sub-title {
+  color: $wred;
+  font-family: "Roboto Condensed", sans-serif;
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.shoe-container {
+  position: relative;
+
+  img {
+    width: 100%;
+    padding: 0 2rem;
+  }
+}
+
+.sticker__wrap {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+
+  border-radius: 10rem;
+  border: 0.1rem solid $wred;
+}
+
+.sticker {
+  color: white;
+  background-color: $wred;
+  font-family: "Roboto Condensed", sans-serif;
+  display: flex;
+
+  width: 10rem;
+  height: 10rem;
+
+  align-items: center;
+  justify-content: center;
+
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  text-align: center;
+
+  border-radius: 5rem;
+  border: 0.1rem solid white;
+}
+
+.name {
+  font-family: "Merriweather", serif;
+  font-size: 3.3rem;
+  text-transform: capitalize;
+  text-align: center;
+  letter-spacing: 0.08em;
+  padding-bottom: 1rem;
 }
